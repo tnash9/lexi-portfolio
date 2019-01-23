@@ -1,0 +1,17 @@
+.container {
+  padding: 1% 1%;
+}
+
+.center {
+  text-align: center;
+}
+
+.menu-toggle {
+  float: right;
+  background-color: black;
+  border-radius: 3px;
+}
+
+h4 {
+  color: rgb(122, 122, 122);
+}
