@@ -166,6 +166,7 @@ pre {
 
 /* MENU ANIMATION */
 #menu {
+  overflow: hidden;
   position: fixed;
   display: none;
   width: 100%;
@@ -176,7 +177,6 @@ pre {
   bottom: 0;
   background-color: white;
   z-index: 2;
-  overflow: hidden;
   animation: .5s ease-out 0s 1 slideInFromTop;
 }
 
@@ -188,17 +188,29 @@ pre {
 #menu-contents{
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   color: #707070;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
 
 .menu-buttons {
+  font-size: 200%;
+  width: 300%;
+  background: none;
+  border: none;
+  border-radius: 3px;
   display: block;
-  padding: 10%;
-  width: 200%;
-  margin: 25%;
+  padding: 12.5%;
+}
+
+.menu-buttons:hover {
+  transition: 1000ms;
+  background-color: black;
+}
+
+input:focus {
+  outline:none !important;
 }
 /* MENU ANIMATION */
 
