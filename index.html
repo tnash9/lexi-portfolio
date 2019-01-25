@@ -16,6 +16,11 @@
   <title>Lexi's Portfolio</title>
 </head>
 <body>
+    <div class="container-fluid menu-container slide-top" onclick="toggle(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
   <!-- LEFT COLUMN -->
   <div class="container-fluid">
     <div class="row home-left center">
@@ -102,3 +107,9 @@
   <!-- END RIGHT COLUMN -->
   </div>
 </body>
+
+<script>
+  function toggle(div) {
+    div.classList.toggle("change");
+  }
+</script>

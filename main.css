@@ -1,15 +1,13 @@
+body {
+  color: black
+}
+
 .container-fluid {
   padding: 1% 1%;
 }
 
 .center {
   text-align: center;
-}
-
-.menu-toggle {
-  float: right;
-  background-color: black;
-  border-radius: 3px;
 }
 
 .home-left {
@@ -59,6 +57,15 @@
   }
 }
 
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -79,23 +86,26 @@
 
 .slide-bottom {
   position: relative;
-  overflow: hidden;
   /* This section calls the animation we defined above */
-  animation: 1.5s ease-out 0s 1 slideInFromBottom;  
+  animation: .75s ease-out 0s 1 slideInFromBottom;  
+}
+
+.slide-top {
+  position: relative;
+  /* This section calls the animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromTop;  
 }
 
 .slide-left {
   position: relative;
-  overflow: hidden;
   /* This section calls the animation we defined above */
-  animation: 1.5s ease-out 0s 1 slideInFromRight;  
+  animation: 1s ease-out 0s 1 slideInFromRight;  
 }
 
 .slide-right {
   position: relative;
-  overflow: hidden;
   /* This section calls the animation we defined above */
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;  
+  animation: 1s ease-out 0s 1 slideInFromLeft;  
 }
 
 #name {
@@ -107,6 +117,14 @@
 
 h2 {
   color: #C66A5F;
+}
+
+h4 {
+  color: #707070;
+}
+
+span {
+  color: #707070;
 }
 
 img {
@@ -141,3 +159,35 @@ pre {
   }
 }
 /* ARROW ANIMATION */
+
+/* MENU ANIMATION */
+.menu-container {
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 1.25%;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
