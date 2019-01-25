@@ -50,6 +50,54 @@
   text-indent: 10px;
 }
 
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-bottom {
+  position: relative;
+  overflow: hidden;
+  /* This section calls the animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromBottom;  
+}
+
+.slide-left {
+  position: relative;
+  overflow: hidden;
+  /* This section calls the animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromRight;  
+}
+
+.slide-right {
+  position: relative;
+  overflow: hidden;
+  /* This section calls the animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;  
+}
+
 #name {
   margin-top: 10%;
   font-family: 'Playfair Display';
