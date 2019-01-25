@@ -165,7 +165,7 @@ pre {
 /* HOMEPAGE ANIMATION */
 
 /* MENU ANIMATION */
-#menu {
+.overlay {
   overflow: hidden;
   position: fixed;
   display: none;
@@ -177,15 +177,14 @@ pre {
   bottom: 0;
   background-color: white;
   z-index: 2;
-  animation: .5s ease-out 0s 1 slideInFromTop;
+  animation: .5s ease-out 0s 1 slideInFromLeft;
 }
 
-#menu .show {
+.overlay .show {
   display: block;
-  animation: .75s ease-out 0s 1 slideInFromLeft;
 }
 
-#menu-contents{
+.overlay-contents{
   position: absolute;
   top: 50%;
   left: 40%;
