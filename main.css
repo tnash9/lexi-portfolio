@@ -1,4 +1,4 @@
-.container {
+.container-fluid {
   padding: 1% 1%;
 }
 
@@ -12,6 +12,84 @@
   border-radius: 3px;
 }
 
-h4 {
-  color: rgb(122, 122, 122);
+.home-left {
+  position: fixed;
+  overflow-y: hidden;
 }
+
+.container-left {
+  margin: .5% .5% 2.5% .5%;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+.date {
+  margin-bottom: 0;
+  color: #777777;
+}
+
+.subheader {
+  margin-top: 0;
+  color: #666666;
+}
+
+.down-arrow {
+  margin-top:50%;
+  text-align: center;
+  font-size:500%;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.resume {
+  position: absolute;
+  top: 100vh;
+}
+
+.tab {
+  text-indent: 10px;
+}
+
+#name {
+  margin-top: 10%;
+  font-family: 'Playfair Display';
+  font-weight: bolder;
+  font-size: 500%;
+}
+
+h2 {
+  color: #C66A5F;
+}
+
+img {
+  margin-left: -1%;
+  max-width: 105%;
+  max-height: 105%;
+}
+
+pre {
+  margin-top: -2.5%;
+  border: none;
+  background: inherit;
+  font: inherit;
+  line-height: 10%;
+}
+
+/* ARROW ANIMATION */
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+/* ARROW ANIMATION */
