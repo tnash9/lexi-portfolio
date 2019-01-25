@@ -16,11 +16,24 @@
   <title>Lexi's Portfolio</title>
 </head>
 <body>
-    <div class="container-fluid menu-container slide-top" onclick="toggle(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+  <!-- MENU BUTTON -->
+  <div id="menuBtn" class="container-fluid menu-container slide-top" onclick="toggle(this, menu)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- END MENU BUTTON -->
+
+  <!-- MENU -->
+  <div id="menu">
+    <div id="menu-contents" class="container-fluid">
+      <button class="menu-buttons">Home</button>
+      <button class="menu-buttons">My Work</button>
+      <button class="menu-buttons">About</button>
+      <button class="menu-buttons">Contact</button>
     </div>
+  </div>
+
   <!-- LEFT COLUMN -->
   <div class="container-fluid">
     <div class="row home-left center">
@@ -109,7 +122,8 @@
 </body>
 
 <script>
-  function toggle(div) {
-    div.classList.toggle("change");
+  function toggle(btn, menu) {
+    btn.classList.toggle("change");
+    menu.classList.toggle("show");
   }
 </script>
