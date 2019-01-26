@@ -17,7 +17,7 @@
 </head>
 <body>
   <!-- MENU BUTTON -->
-  <div id="menuBtn" class="container-fluid menu-container slide-top" onclick="toggle(this, menu)">
+  <div id="menuBtn" class="container-fluid menu-container slide-top" onclick="openNav()">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
@@ -25,15 +25,17 @@
   <!-- END MENU BUTTON -->
 
   <!-- MENU -->
-  <div id="menu">
-    <div id="menu-contents" class="container-fluid">
-      <button class="menu-buttons">Home</button>
-      <button class="menu-buttons">My Work</button>
+  <div id="menu" class="overlay">
+    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <div class="overlay-contents">
       <button class="menu-buttons">About</button>
+      <button class="menu-buttons">Services</button>
+      <button class="menu-buttons">Clients</button>
       <button class="menu-buttons">Contact</button>
     </div>
   </div>
-
+  <!-- END MENU -->
+  
   <!-- LEFT COLUMN -->
   <div class="container-fluid">
     <div class="row home-left center">
@@ -121,9 +123,27 @@
   </div>
 </body>
 
+
+
+<!-- <script>
+  $('#menuBtn').click(function() {    
+    $('#menu').toggleClass('show');
+    $('#menuBtn').toggleClass('change');
+  });
+</script> -->
+
 <script>
-  function toggle(btn, menu) {
-    btn.classList.toggle("change");
-    menu.classList.toggle("show");
-  }
+  // function toggle(btn, menu) {
+  //   btn.classList.toggle("change");
+  //   menu.classList.toggle("show");
+  // }
+  function openNav() {
+    document.getElementById('menuBtn').classList.toggle("change");
+  document.getElementById("menu").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById('menuBtn').classList.toggle("change");
+  document.getElementById("menu").style.width = "0%";
+}
 </script>

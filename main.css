@@ -1,5 +1,9 @@
 body {
-  color: black
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display:none;
 }
 
 .container-fluid {
@@ -164,55 +168,72 @@ pre {
 }
 /* HOMEPAGE ANIMATION */
 
-/* MENU ANIMATION */
-#menu {
-  overflow: hidden;
-  position: fixed;
-  display: none;
-  width: 100%;
+/* OVERLAY ANIMATION */
+.overlay {
   height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   background-color: white;
-  z-index: 2;
-  animation: .5s ease-out 0s 1 slideInFromTop;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-#menu .show {
+.show {
   display: block;
-  animation: .75s ease-out 0s 1 slideInFromLeft;
 }
 
-#menu-contents{
+.overlay-contents {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay .closebtn {
+  cursor: pointer;
+  color: black;
   position: absolute;
-  top: 50%;
-  left: 40%;
-  color: #707070;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  top: 0;
+  right: 0;
+  font-size: 60px;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
 }
+/* OVERLAY ANIMATION */
 
+/* MENU */
 .menu-buttons {
+  color: #4e4e4e;
+  margin-left: 37.5%;
   font-size: 200%;
-  width: 300%;
+  width: 25%;
   background: none;
   border: none;
   border-radius: 3px;
   display: block;
-  padding: 12.5%;
+  padding: 1%;
+  outline: none !important;
+}
+
+.menu-buttons:focus {
+  transition: 1000ms;
+  color: #a0a0a0;
+  background-color: black;
 }
 
 .menu-buttons:hover {
   transition: 1000ms;
+  color: #a0a0a0;
   background-color: black;
 }
 
 input:focus {
   outline:none !important;
 }
-/* MENU ANIMATION */
+/* MENU */
 
 /* MENU BUTTON ANIMATION */
 .menu-container {
@@ -222,7 +243,6 @@ input:focus {
   top: 0;
   padding: 1.25%;
   cursor: pointer;
-  z-index: 3;
 }
 
 .bar1, .bar2, .bar3 {
@@ -230,7 +250,7 @@ input:focus {
   height: 5px;
   background-color: #333;
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.8s;
 }
 
 .change .bar1 {
