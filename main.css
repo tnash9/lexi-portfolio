@@ -2,10 +2,6 @@ body {
   color: black;
 }
 
-::-webkit-scrollbar {
-  display:none;
-}
-
 .container-fluid {
   padding: 1% 1%;
 }
@@ -208,6 +204,7 @@ pre {
 .menu-buttons {
   color: #4e4e4e;
   margin-left: 37.5%;
+  margin-bottom: .25%;
   font-size: 200%;
   width: 25%;
   background: none;
