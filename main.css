@@ -18,12 +18,14 @@ body {
 .home-right {
   display: flex;
   justify-content: center;
+  z-index: -1;
 }
 
 .container-left {
   margin: .5% .5% 2.5% .5%;
-  border: 3px solid black;
   overflow: hidden;
+  background-color: white;
+  z-index: 2;
 }
 
 .date {
@@ -47,17 +49,58 @@ body {
 .resume {
   position: absolute;
   top: 100vh;
+  margin-bottom: 5%;
 }
 
 .tab {
   text-indent: 10px;
 }
 
-#name {
-  margin-top: 10%;
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project-container {
+  margin: .5% .5% 2.5% .5%;
+  border: 3px solid black;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2;
+  height: 75%;
+  width: 75%;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.project-header {
+  margin-top: 5%;
+}
+
+.header {
   font-family: 'Playfair Display';
   font-weight: bolder;
   font-size: 500%;
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+.ratio-4-3{
+  width:75%;
+  position:relative;
+  background:url() 50% 50% no-repeat;
+  background-size:cover;
+  background-clip:content-box;
+}
+.ratio-4-3:before{
+    display:block;
+    content:"";
+    padding-top:75%;
+}
+
+#name {
+  margin-top: 10%;
 }
 
 h2 {
@@ -81,11 +124,16 @@ img {
   max-height: 105%;
 }
 
+.container img {
+  max-width: auto;
+  max-height: 100%;
+}
+
 li {
   font-size: 90%;
 }
 
-button {
+a {
   color: #4e4e4e;
   font-size: 200%;
   width: 25%;
@@ -95,22 +143,40 @@ button {
   display: block;
   padding: 1%;
   outline: none !important;
+  cursor: pointer;
 }
 
-button:focus {
+a:focus {
   transition: 1000ms;
   color: #a0a0a0;
   background-color: black;
+  text-decoration: none;
 }
 
-button:hover {
+a:hover {
   transition: 1000ms;
   color: #a0a0a0;
   background-color: black;
+  text-decoration: none;
 }
 
 input:focus {
   outline:none !important;
+}
+
+span.closebtn:focus {
+  transition: 1000ms;
+  color: #a0a0a0;;
+  outline:none !important;
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
 }
 
 /* ARROW ANIMATION */
@@ -199,7 +265,7 @@ input:focus {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   background-color: white;
@@ -237,19 +303,12 @@ input:focus {
 }
 
 .hire {
-  position: absolute;
-  color: black;
-  width: 15%;
-  top: 0;
-  left: 0;
-  margin-top: .5%;
-  margin-left: -2.5%;
-  margin-bottom: 2.5%;
+  color: #4e4e4e;
 }
 
 .hire:hover {
   transition: 1000ms;
-  color: #a0a0a0;
+  color: black;
   text-decoration: overline underline;
   background: none;
 }
@@ -257,7 +316,7 @@ input:focus {
 .hire:focus {
   transition: 1000ms;
   text-decoration: overline underline;
-  color: #a0a0a0;
+  color: black;
   background: none;
 }
 /* MENU */

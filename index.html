@@ -26,13 +26,13 @@
 
   <!-- MENU -->
   <div id="menu" class="overlay">
-    <button class="hire">Click to Hire</button>
-    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <span class="closebtn" onclick="closeNav()" tabindex="7">&times;</span>
     <div class="overlay-contents">
-      <button class="menu-buttons">Home</button>
-      <button class="menu-buttons">My Work</button>
-      <button class="menu-buttons">About</button>
-      <button class="menu-buttons">Contact</button>
+      <a class="menu-buttons hire" tabindex="2">CLICK TO HIRE</a>
+      <a href="index.html" class="menu-buttons"tabindex="3">Home</a>
+      <a href="projects.html" class="menu-buttons" tabindex="4">My Work</a>
+      <a class="menu-buttons" tabindex="5">About</a>
+      <a class="menu-buttons" tabindex="6">Contact</a>
     </div>
   </div>
   <!-- END MENU -->
@@ -42,7 +42,7 @@
     <div class="row home-left center">
       <div class="col-md-6">
         <div>
-          <h1 class="slide-left" id="name">Lexi Ruroden</h1>
+          <h1 class="slide-left header" id="name">Lexi Ruroden</h1>
           <h4 class="slide-right">Sophomore at Iowa State. Super Good at Design.</h4>
         </div>
         <div class="container-left slide-bottom">

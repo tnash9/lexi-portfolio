@@ -1,0 +1,92 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- main CSS -->
+  <link rel="stylesheet" href="main.css">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title>Lexi's Portfolio</title>
+</head>
+<body>
+  <!-- MENU BUTTON -->
+  <div id="menuBtn" class="container-fluid menu-container slide-top" onclick="openNav()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- END MENU BUTTON -->
+
+  <!-- MENU -->
+  <div id="menu" class="overlay">
+    <span class="closebtn" onclick="closeNav()" tabindex="7">&times;</span>
+    <div class="overlay-contents">
+      <a class="menu-buttons hire" tabindex="2">CLICK TO HIRE</a>
+      <a href="index.html" class="menu-buttons"tabindex="3">Home</a>
+      <a href="projects.html" class="menu-buttons" tabindex="4">My Work</a>
+      <a class="menu-buttons" tabindex="5">About</a>
+      <a class="menu-buttons" tabindex="6">Contact</a>
+    </div>
+  </div>
+  <!-- END MENU -->
+
+  <!-- MAIN -->
+  <div class="container-fluid">
+    <h1 class="slide-left center header">My Projects</h1>
+    <div class="row projects center">
+      <div class="col-md-6 col-sm-12 project-container">
+        <h2 class="project-header">Project 1</h2>
+        <h3>Brief Description</h3>
+        <h4>More Description If Necessary</h4>
+        <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
+        <h4>Short Afterwards If Necessary</h4>
+      </div>
+      <div class="col-md-6 col-sm-12 project-container">
+        <h2 class="project-header">Project 2</h2>
+        <h3>Brief Description</h3>
+        <h4>More Description If Necessary</h4>
+        <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
+        <h4>Short Afterwards If Necessary</h4>
+      </div>
+    </div>
+    <div class="row projects center">
+      <div class="col-md-6 col-sm-12 project-container">
+        <h2 class="project-header">Project 3</h2>
+        <h3>Brief Description</h3>
+        <h4>More Description If Necessary</h4>
+        <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
+        <h4>Short Afterwards If Necessary</h4>
+      </div>
+      <div class="col-md-6 col-sm-12 project-container">
+        <h2 class="project-header">Project 4</h2>
+        <h3>Brief Description</h3>
+        <h4>More Description If Necessary</h4>
+        <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
+        <h4>Short Afterwards If Necessary</h4>
+      </div>
+    </div>
+  <!-- END MAIN -->
+</body>
+
+<script>
+  function openNav() {
+    document.getElementById('menuBtn').classList.toggle("change");
+    document.getElementById("menu").style.width = "100%";
+    document.body.style.overflowY = "hidden";
+  }
+
+  function closeNav() {
+    document.getElementById('menuBtn').classList.toggle("change");
+    document.getElementById("menu").style.width = "0%";
+    document.body.style.overflowY = "scroll";
+  }
+</script>
