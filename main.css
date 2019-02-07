@@ -99,8 +99,29 @@ body {
     padding-top:75%;
 }
 
+.flex-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
 #name {
   margin-top: 10%;
+}
+
+i.fa {
+  font-size: 250%;
+  margin-right: 20%;
+}
+
+h2.contact {
+  margin-top: 0;
 }
 
 h2 {
@@ -130,34 +151,7 @@ img {
 }
 
 li {
-  font-size: 90%;
-}
-
-a {
-  color: #4e4e4e;
-  font-size: 200%;
-  width: 25%;
-  background: none;
-  border: none;
-  border-radius: 3px;
-  display: block;
-  padding: 1%;
-  outline: none !important;
-  cursor: pointer;
-}
-
-a:focus {
-  transition: 1000ms;
-  color: #a0a0a0;
-  background-color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  transition: 1000ms;
-  color: #a0a0a0;
-  background-color: black;
-  text-decoration: none;
+  font-size: 120%;
 }
 
 input:focus {
@@ -170,13 +164,43 @@ span.closebtn:focus {
   outline:none !important;
 }
 
-a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+a {
+  width: 100%;
+  color: black;
+  display: inherit;
+}
 
+a h2 {
+  color: black;
+}
+
+a:focus, a:hover, a:focus h2, a:hover h2 {
+  transition: 1000ms;
+  color: #C66A5F;
+  text-decoration: none;
+  outline: none !important;
+}
+
+a.button {
+  color: #4e4e4e;
+  font-size: 200%;
+  width: 25%;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  padding: 1%;
+  outline: none !important;
+  cursor: pointer;
   text-decoration: none;
   color: initial;
+}
+
+a.button:focus, a.button:hover {
+  transition: 1000ms;
+  color: #a0a0a0;
+  background-color: black;
+  text-decoration: none;
 }
 
 /* ARROW ANIMATION */
@@ -302,18 +326,18 @@ a.button {
   margin-bottom: .25%;
 }
 
-.hire {
+a.hire {
   color: #4e4e4e;
 }
 
-.hire:hover {
+a.hire:hover {
   transition: 1000ms;
   color: black;
   text-decoration: overline underline;
   background: none;
 }
 
-.hire:focus {
+a.hire:focus {
   transition: 1000ms;
   text-decoration: overline underline;
   color: black;
