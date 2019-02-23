@@ -46,6 +46,26 @@ body {
   z-index: -1;
 }
 
+.down-arrow-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .down-arrow {
+    display: none;
+  }
+
+  .down-arrow-mobile {
+    display: block;
+    margin-top: 10%;
+    text-align: center;
+    font-size:500%;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    z-index: -1;
+  }
+}
+
 .resume {
   position: absolute;
   top: 100vh;

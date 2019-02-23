@@ -46,47 +46,68 @@
       <div class="center">
         <div class="col-lg-6">
           <div class="project-container">
-            <h2 class="project-header">Project 1</h2>
-            <h3>Brief Description</h3>
-            <h4>More Description If Necessary</h4>
-            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
-            <h4>Short Afterwards If Necessary</h4>
+            <h2 class="project-header">Color Project</h2>
+            <h3>Freshman Design Core @ ISU</h3>
+            <h4 style="visibility:hidden;">.</h4>
+            <h4 style="visibility:hidden;">.</h4>
+            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/color-project/collage5.jpg')"></div>
+            <h4>1 6'x3' triptych implementing all of the previous steps</h4>
+            <h4>a few josef albers exercises with color-aid paper</h4>
+            <h4>8 3"x3" collages with color-aid paper</h4>
+            <h4>2 mixed media collages</h4>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="project-container">
-            <h2 class="project-header">Project 2</h2>
-            <h3>Brief Description</h3>
-            <h4>More Description If Necessary</h4>
-            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
-            <h4>Short Afterwards If Necessary</h4>
+            <h2 class="project-header">Place Project</h2>
+            <h3>Freshman Design Core @ ISU</h3>
+            <h4>I was assigned a place on Iowa state's campus,</h4>
+            <h4>and was given the courtyard of Lagomarcino Hall</h4>
+            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/color-project/collage2.jpg')"></div>
+            <h4>map of the journey from the College of Design to Lagomarcino Hall</h4>
+            <h4>1 isometric map of Lagomarcino Hall</h4>
+            <h4>1 section view of Lagomarcino Hall</h4>
+            <h4>1 plan view of Lagomarcino Hall</h4>
           </div>
-      </div>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="center">
         <div class="col-lg-6">
           <div class="project-container">
-            <h2 class="project-header">Project 3</h2>
-            <h3>Brief Description</h3>
-            <h4>More Description If Necessary</h4>
-            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
-            <h4>Short Afterwards If Necessary</h4>
+            <h2 class="project-header">30-20-10</h2>
+            <h3>Freshman Design Core @ ISU</h3>
+            <h4 style="visibility:hidden;">.</h4>
+            <h4 style="visibility:hidden;">.</h4>
+            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/color-project/collage4.jpg')"></div>
+            <h4>30 paper folds</h4>
+            <h4>20 1"x1.5" drawings of the folds</h4>
+            <h4>10 3"x3" collages</h4>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="project-container">
-            <h2 class="project-header">Project 4</h2>
-            <h3>Brief Description</h3>
-            <h4>More Description If Necessary</h4>
-            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/test.png')"></div>
-            <h4>Short Afterwards If Necessary</h4>
+            <h2 class="project-header">Project Heading</h2>
+            <h3>Subheading</h3>
+            <h4 style="visibility:hidden;">.</h4>
+            <h4 style="visibility:hidden;">.</h4>
+            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/color-project/triptych.jpg')"></div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   <!-- END MAIN -->
 </body>
 
 <script src="js/menu-animation.js"></script>
+<script>
+  var maxHeight = 0;
+
+  $('.project-container').each(function(){
+    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  });
+
+  $('.project-container').height(maxHeight);
+</script>
