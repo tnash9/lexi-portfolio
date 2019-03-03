@@ -1,0 +1,61 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- main CSS -->
+  <link rel="stylesheet" href="main.css">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title>Lexi's Portfolio</title>
+</head>
+<body>
+  <!-- MENU BUTTON -->
+  <div id="menuBtn" class="container-fluid menu-container slide-top" onclick="openNav()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- END MENU BUTTON -->
+
+  <!-- MENU -->
+  <div id="menu" class="overlay">
+    <span class="closebtn" onclick="closeNav()" tabindex="7">&times;</span>
+    <div class="overlay-contents">
+      <a class="menu-buttons hire button" tabindex="2">CLICK TO HIRE</a>
+      <a href="index.html" class="menu-buttons button"tabindex="3">Home</a>
+      <a href="projects.html" class="menu-buttons button" tabindex="4">My Work</a>
+      <a class="menu-buttons button" tabindex="5">About</a>
+      <a href="contact.html" class="menu-buttons button" tabindex="6">Contact</a>
+    </div>
+  </div>
+  <!-- END MENU -->
+
+  <!-- MAIN -->
+  <div class="container-fluid">
+    <h1 class="slide-left center header">Color Project</h1>
+    <div class="row">
+      <div class="center">
+          <div class="project-container">
+            <h2 class="project-header">Freshman Design Core @ ISU</h2>
+            <h4>1 6'x3' triptych implementing all of the previous steps</h4>
+            <h4>a few josef albers exercises with color-aid paper</h4>
+            <h4>8 3"x3" collages with color-aid paper</h4>
+            <h4>2 mixed media collages</h4>
+            <div class="img-responsive img-thumbnail ratio-4-3" style="background-image:url('./assets/color-project/collage5.jpg')"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN -->
+</body>
+
+<script src="js/menu-animation.js"></script>
